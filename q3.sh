@@ -14,5 +14,4 @@ echo -n "Line No: <$a> - Count of Words:"
 echo -n $e|wc -w
 ((a=a+1))
 done <$1
-let p=0;
 awk '{for(p = 1; p <= NF; p=p+1) {arr[$p]++}} END {for(j in arr) if(arr[j] >= 2)  {print "Word :" j ,"- Count of repetition :"  arr[j] }}' $1

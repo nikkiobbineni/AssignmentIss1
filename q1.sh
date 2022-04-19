@@ -5,6 +5,6 @@ echo
 echo
 echo
 echo
-sort $1 >> out.txt
+#sort $1 >> out.txt
 uniq out.txt 
 
